@@ -8,15 +8,15 @@ public class App
     public static void main(String[] args) {
         // Using a polymorphic List of the Interface type
         List<PaymentMethod> cart = new ArrayList<>();
-        cart.add(new CreditCard("new CreditCard Payment"));
-        cart.add(new PayPal("new PayPal payment"));
+        cart.add(new CreditCard("4000541254125"));
+        cart.add(new PayPal("horizontechnologies@msn.com"));
 
         // Adding one CreditCard and one PayPal object to the list
         
         System.out.println("--- Checkout Initiated ---");
         // Looping through the list and processing a payment of 99.99 for each
         for (PaymentMethod Payment : cart) {
-            Payment.processPayment();
+            Payment.processPayment(99.99);
         }
     }
 }
