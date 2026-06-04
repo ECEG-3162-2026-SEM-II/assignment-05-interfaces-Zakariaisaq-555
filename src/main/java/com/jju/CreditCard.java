@@ -11,5 +11,6 @@ public class CreditCard implements PaymentMethod {
     public void processPayment(double amount) {
        
         System.out.println("Charging $" + amount + " to Card: " + cardNumber);
+        System.out.println("===============================================");
     }
 }
